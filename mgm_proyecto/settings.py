@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'mgm_app', # registro de apliación personalizada creada por mgm 
 ]
 
 MIDDLEWARE = [

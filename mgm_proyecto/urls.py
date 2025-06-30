@@ -20,5 +20,8 @@ from mgm_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", views.index, name="index"),
+    path("", views.inicio, name="inicio"),
+    path("usuarios/", views.usuarios, name="usuarios"),
+    path("recetas/", views.recetas, name="recetas"),
+    path("condimentos/", views.condimentos, name="condimentos"),
 ]

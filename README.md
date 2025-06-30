@@ -2,16 +2,19 @@
 ## Trabajo Coderhouse
 ### Tercera Entrega
 
-## Pasos Creación de Repositorio
+
+## Pasos Creación de Repositorio 🔧
 1- Crear Repositorio Git
 2- git clone (CTRL V)
 
-## Pasos para actualizar repositorio
+
+## Pasos para actualizar repositorio ⚙️
 1- git add . 
 2- git commit -m "mensaje"
 3- git push
 
-## Activar entorno virtual:
+
+## Activar entorno virtual: 🛠️
 1- python -m venv .venv (creación de entorno virtual)
 2- ejecutar el Script activate del .venv: .\.venv\Scripts\activate
 **********************************************************
@@ -22,7 +25,7 @@ Set-ExecutionPolicy Unrestricted
 3- instalar DJANGO en el entorno virtual: pip install django
 
 
-## Primeros pasos en DJANGO
+## Primeros pasos en DJANGO 😁
 - Comandos: django-admin
 - PARA CREAR PROYECTO USAMOS: django-admin startproject NombreProyecto . (espacio punto es para que no cree una nueva carpeta)
 - Ese comando crea un archivo llamado manage.py que sirve para administrar el proyecto.
@@ -31,7 +34,7 @@ Set-ExecutionPolicy Unrestricted
 FRENAR EL SERVIDOR > CRTL + C
 *****************************************************
 
-## CREACION DE APLICACION
+## CREACION DE APLICACION ☑️
 1- dentro del entorno virtual .venv, se debe crear la aplicación.
 2- python manage.py startapp NombreApp
 APENAS CREAMOS LA APLICACIÓN DEBEMOS REGISTRARLA EN NombreProyecto/SETTINGS.py
@@ -43,8 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
- ###   'mgm_app', # registro de apliación personalizada creada por mgm #
-]
+ ###   'mgm_app', # registro de apliación personalizada creada por mgm #]
+
 
 ## Creación de Templates
 En el contexto digital, un template o plantilla es un archivo o diseño predefinido que sirve como base para la creación de otros documentos, páginas web, o elementos visuales. Permite estandarizar la apariencia y estructura, facilitando la creación de contenido nuevo de manera consistente y eficiente.
@@ -69,5 +72,4 @@ Luego de correr esos dos comandos desde  desde la raíz del  proyecto (fuera del
 *******************************************************************
 ANTE UNA MODIFICACIÓN DE LA BASE DE DATOS ES IMPORTANTE EJECUTAR
 python manage.py makemigrations
-
 *******************************************************************

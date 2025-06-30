@@ -4,8 +4,26 @@
 {% block navbar_brand %}Mi App de Cocina{% endblock navbar_brand %}
 {% block content_title %}Usuarios{% endblock content_title%}
 
+
+
 {% block content %}
-  <p></p>
+  <a href="{% url 'mgm_app:usuario_creacion' %}" class="btn btn-primary mb-3">Crear Usuario</a>
 
+  <form action="{% url 'mgm_app:usuarios' %}" method="get">
+    <input type="text" name="busqueda" placeholder="Buscar usuario por nombre..." type="submit"
+    class="form-control mb-3">
+  </form>
+
+  <h4 class="mb-3">USUARIOS EXISTENTES</h4>
+  <ul class="list-group mb-3">
+    {% for usuario in usuarios %}
+      <li class="list-group-item list-group-item-action">
+        <div>
+          <h5 class="mb-1">{{ usuario.apellido }}, {{ usuario.nombre }}</h5>
+        </div>
+      </li>
+    {% empty %}
+      <li class="list-group-item">No hay usuarios registrados.</li>
+    {% endfor %}
+  </ul>
 {% endblock content %}
-

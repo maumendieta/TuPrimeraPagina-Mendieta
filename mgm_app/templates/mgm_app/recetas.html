@@ -5,7 +5,17 @@
 {% block content_title %}Recetas{% endblock content_title%}
 
 {% block content %}
-  <p></p>
-
+  <h4 class="mb-3">RECETAS EXISTENTES</h4>
+  <ul class="list-group mb-3">
+    {% for receta in recetas %}
+      <li class="list-group-item list-group-item-action">
+        <div>
+          <h5 class="mb-1">{{ receta.nombre }}</h5>
+        </div>
+      </li>
+    {% empty %}
+      <li class="list-group-item">No hay recetas registradas.</li>
+    {% endfor %}
+  </ul>
 {% endblock content %}
 
